@@ -118,13 +118,14 @@ public class MainActivity extends AppCompatActivity {
             View view = layoutInflater.inflate(R.layout.listview_item, parent, false);
 
             // ListView의 Item을 구성하는 뷰 연결
-            TextView number = view.findViewById(R.id.listitem_number);
+//            TextView number = view.findViewById(R.id.listitem_number);
             TextView title = view.findViewById(R.id.listitem_title);
             ImageView image = view.findViewById(R.id.listitem_image);
+            ImageView date = view.findViewById(R.id.listitem_date);
 
             // ListView의 Item을 구성하는 뷰 세팅
             ListView_Item item = items.get(position);
-            number.setText(String.valueOf(position+1));
+//            number.setText(String.valueOf(position+1));
             title.setText(item.getTitle());
             image.setImageResource(item.getImage());
 
